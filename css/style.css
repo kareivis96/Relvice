@@ -1,0 +1,29 @@
+body {
+  font-family: Montserrat;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1046px;
+  margin: 0px auto;
+}
+
+.header {}
+
+.header__container{} 
+
+.header__logo {}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
