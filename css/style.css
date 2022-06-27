@@ -6,7 +6,7 @@ body {
   color: #252b42;
   font-family: Montserrat;
 }
-
+/*----------------------------------------------------------------------*/
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -14,17 +14,14 @@ body {
   overflow: hidden;
 }
 
-._ibg {
-  
-}
-
+/*----------------------------------------------------------------------*/
 ._container {
   max-width: 1046px;
   margin: 0px auto;
   padding: 0 15px;
   box-sizing: content-box;
 }
-/*--------HEADER--------------------------------------------------------------*/
+/*-------- HEADER --------------------------------------------------------------*/
 .header {
   position: absolute;
   width: 100%;
@@ -93,25 +90,33 @@ body {
     font-size: 18px;
   }
 }
-/*-----------PAGE-----------------------------------------------------------*/
-.page {
-  flex: 1 1 auto;
+
+/*-------- PAGE --------------------------------------------------------------*/
+.page{
+  
 }
-
-.page__main-block
-/*-----------MAIN-BLOCK-----------------------------------------------------------*/
-.main-block 
-
-.main-block__container 
-
-.main-block__body 
-
-.main-block__title 
-
-.main-block__text 
-
-.main-block__buttons 
-
-.main-block__button 
-
-.main-block__button_border 
+/*-------- FIRST CONTENT BOX --------------------------------------------------------------*/
+.first-content-box {
+}
+.first-content-box-backgrounds {
+}
+.first-content-block-top {
+}
+.first-content-block-top__title {
+}
+.first-content-block-top__text {
+}
+.first-content-block__buttons {
+}
+.first-content-block__button_orange {
+}
+.first-content-block__button_white {
+}
+.three-content-boxes {
+}
+.three-content-boxes__first {
+}
+.three-content-boxes__second {
+}
+.three-content-boxes__third {
+}
