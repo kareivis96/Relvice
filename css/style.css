@@ -1,3 +1,4 @@
+/*-------- MAIN-style ---------------------------------------------------------------------------*/
 body {
   height: 100%;
   line-height: 1;
@@ -6,19 +7,18 @@ body {
   color: #252b42;
   font-family: Arial, Helvetica, sans-serif;
 }
-/*----------------------------------------------------------------------*/
-.wrapper {
+._container {
+  max-width: 1046px;
+  margin: 0px auto;
+}
+/*-------- page ---------------------------------------------------------------------------*/
+.page {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
 }
-/*----------------------------------------------------------------------*/
-._container {
-  max-width: 1046px;
-  margin: 0px auto;
-}
-/*-------- HEADER --------------------------------------------------------------*/
+/*-------- header --------------------------------------------------------------*/
 .header {
   position: absolute;
   width: 100%;
@@ -77,20 +77,21 @@ body {
     font-size: 18px;
   }
 }
-/*-------- PAGE --------------------------------------------------------------*/
-/*-------- FIRST CONTENT BOX --------------------------------------------------------------*/
+/*-------- main-container --------------------------------------------------------------*/
 .main-container {
+  border: 1px solid #ff0000;
+  position: relative;
   width: 100%;
-  height: 793px;
+  min-height: 793px;
 }
-.main-container__background img {
+.main-container__background {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   object-fit: cover;
-  z-index: -10;
+  z-index: -5;
 }
 .content-container {
   display: flex;
@@ -155,4 +156,71 @@ body {
     text-decoration: none;
   }
 }
-/*-------- SECOND CONTENT BOX --------------------------------------------------------------*/
+/*-------- ABOUT-US --------------------------------------------------------------*/
+.about-us {
+  position: relative;
+  width: 100%;
+}
+.about-us__container {
+  border: 1px solid #ff0000;
+  max-width: 1046px;
+  margin: 0 auto 0 auto;
+}
+.about-us__first-block {
+  border: 1px solid #0000ff;
+  width: 328px;
+  min-height: 242px;
+  margin: -111px 0 0 0;
+}
+/*-------- STATISTIC --------------------------------------------------------------*/
+.statistic {
+  width: 100%;
+}
+.statistic__container {
+  border: 1px solid #a347f8;
+  max-width: 1046px;
+  min-height: 526px;
+  margin: 0 auto;
+}
+/*-------- practice-advice --------------------------------------------------------------*/
+.practice-advice {
+  width: 100%;
+}
+.practice-advice__container {
+  border: 1px solid #000000;
+  max-width: 1046px;
+  min-height: 699px;
+  margin: 0 auto;
+}
+/*-------- who-we-are --------------------------------------------------------------*/
+.who-we-are {
+  width: 100%;
+}
+.who-we-are__container {
+  border: 1px solid #408080;
+  max-width: 1046px;
+  min-height: 890px;
+  margin: 0 auto;
+}
+/*-------- clients --------------------------------------------------------------*/
+.clients {
+  border: 1px solid #000040;
+  width: 100%;
+  min-height: 339px;
+}
+/*-------- contacts --------------------------------------------------------------*/
+.contacts {
+  width: 100%;
+}
+.contacts__container {
+  border: 1px solid #ff0000;
+  max-width: 1046px;
+  min-height: 808px;
+  margin: 0 auto;
+}
+/*-------- footer --------------------------------------------------------------*/
+.footer {
+  border: 1px solid #80ffff;
+  width: 100%;
+  min-height: 488px;
+}
