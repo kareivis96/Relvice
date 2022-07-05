@@ -194,20 +194,60 @@ body {
   min-height: 172px;
 }
 .about-us-blocks__img {
-  border: 1px solid red;
-  height: 48px;
+  position: relative;
+  height: 41px;
   width: 48px;
   margin-bottom: 10px;
 }
-.about-us-blocks__img_1 {
-  background: url("img/main-block/about-us/second-pic-green.png");
+.about-us-blocks__img_1-white {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
-.about-us-blocks__img_2 {
-  background: url("img/main-block/about-us/second-pic-green.png") cover;
+.about-us-blocks__img_1-green {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
-.about-us-blocks__img_3 {
-  background: url("img/main-block/about-us/third-pic-green.png") cover;
+.about-us-blocks__img_2-white {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
+.about-us-blocks__img_2-green {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.about-us-blocks__img_3-white {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.about-us-blocks__img_3-green {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 .about-us-blocks__title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -231,8 +271,14 @@ body {
 .about-us-blocks:hover .about-us-blocks__title {
   color: white;
 }
-.about-us-blocks:hover .about-us-blocks__img_1 {
-  background: white;
+.about-us-blocks:hover .about-us-blocks__img_1-green {
+  display: none;
+}
+.about-us-blocks:hover .about-us-blocks__img_2-green {
+  display: none;
+}
+.about-us-blocks:hover .about-us-blocks__img_3-green {
+  display: none;
 }
 /*-------- STATISTIC --------------------------------------------------------------*/
 .statistic {
@@ -243,6 +289,58 @@ body {
   max-width: 1046px;
   min-height: 526px;
   margin: 0 auto;
+}
+.statistic__main-content-block {
+  border: 1px solid #800000;
+  min-height: 366px;
+  margin: 80px 0;
+}
+.statistic__paragraph {
+  border: 1px solid #00ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  max-width: 864px;
+  min-height: 107px;
+}
+.statistic__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: rgba(37, 43, 66, 1);
+}
+.statistic__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
+  text-align: center;
+  max-width: 511px;
+}
+.statistic__cards {
+  border: 1px solid #804000;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+  min-height: 209px;
+}
+.statistic__item {
+  border: 1px solid #800080;
+  width: 240px;
+  height: 209px;
+}
+@media (max-width: 985px) {
+  .statistic__cards {
+    flex-direction: column;
+  }
+  .statistic__item:not(:last-child){
+    margin: 0 0 5px 0;
+  }
 }
 /*-------- practice-advice --------------------------------------------------------------*/
 .practice-advice {
