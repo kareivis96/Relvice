@@ -167,9 +167,10 @@ body {
   max-width: 1046px;
   margin: 0 auto 0 auto;
 }
-@media (max-width: 989px) {
+@media (max-width: 1023px) {
   .about-us__container {
     flex-direction: column;
+    align-items: center;
     min-height: 680px;
     width: 95%;
   }
@@ -285,18 +286,15 @@ body {
   width: 100%;
 }
 .statistic__container {
-  border: 1px solid #a347f8;
   max-width: 1046px;
   min-height: 526px;
   margin: 0 auto;
 }
 .statistic__main-content-block {
-  border: 1px solid #800000;
   min-height: 366px;
   margin: 80px 0;
 }
 .statistic__paragraph {
-  border: 1px solid #00ff00;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -323,22 +321,45 @@ body {
   max-width: 511px;
 }
 .statistic__cards {
-  border: 1px solid #804000;
   display: flex;
   justify-content: space-between;
   margin: 0 5px;
   min-height: 209px;
 }
 .statistic__item {
-  border: 1px solid #800080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   width: 240px;
   height: 209px;
 }
-@media (max-width: 985px) {
+.statistic__item-img {
+  height: 48px;
+  width: 48px;
+}
+.statistic__item-number {
+  min-height: 57px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
+}
+.statistic__item-text {
+  min-height: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: rgba(115, 115, 115, 1);
+}
+@media (max-width: 1023px) {
   .statistic__cards {
     flex-direction: column;
+    align-items: center;
   }
-  .statistic__item:not(:last-child){
+  .statistic__item:not(:last-child) {
     margin: 0 0 5px 0;
   }
 }
@@ -351,6 +372,59 @@ body {
   max-width: 1046px;
   min-height: 699px;
   margin: 0 auto;
+}
+.practice-advice__content-block {
+  min-height: 538px;
+  margin: 80px 0;
+}
+.practice-advice__text-block {
+  border: 1px solid #800000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 197px;
+}
+.practice-advice__title {
+  border: 1px solid #804040;
+  min-height: 57px;
+  margin-bottom: 10px;
+}
+.practice-advice__text {
+  border: 1px solid #400000;
+  min-height: 40px;
+  text-align: center;
+}
+.practice-advice__card-block {
+  border: 1px solid #00ff00;
+  display: flex;
+  justify-content: space-between;
+  min-height: 341px;
+}
+.practice-advice__card {
+  border: 1px solid #004000;
+  width: 230px;
+  height: 341px;
+}
+.practice-advice__card-paragraph {
+  border: 1px solid #00ff00;
+  width: 100%;
+  height: 203px;
+}
+.practice-advice__card-title {
+}
+.practice-advice__card-text {
+}
+.practice-advice__card-img {
+  border: 1px solid #808040;
+  width: 100%;
+  height: 138px;
+}
+@media (max-width: 1023px) {
+  .practice-advice__card-block {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*-------- who-we-are --------------------------------------------------------------*/
 .who-we-are {
