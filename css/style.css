@@ -13,6 +13,9 @@ body {
 }
 /*-------- page ---------------------------------------------------------------------------*/
 .page {
+  background: url("../img/main-block/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -79,19 +82,8 @@ body {
 }
 /*-------- main-container --------------------------------------------------------------*/
 .main-container {
-  border: 1px solid #ffffff;
-  position: relative;
   width: 100%;
   min-height: 793px;
-}
-.main-container__background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  z-index: -5;
 }
 .content-container {
   display: flex;
@@ -368,7 +360,6 @@ body {
   width: 100%;
 }
 .practice-advice__container {
-  border: 1px solid #000000;
   max-width: 1046px;
   min-height: 699px;
   margin: 0 auto;
@@ -378,7 +369,6 @@ body {
   margin: 80px 0;
 }
 .practice-advice__text-block {
-  border: 1px solid #800000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -386,37 +376,66 @@ body {
   min-height: 197px;
 }
 .practice-advice__title {
-  border: 1px solid #804040;
   min-height: 57px;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 135%;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
 }
 .practice-advice__text {
-  border: 1px solid #400000;
   min-height: 40px;
+  max-width: 470px;
   text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
 }
 .practice-advice__card-block {
-  border: 1px solid #00ff00;
   display: flex;
   justify-content: space-between;
   min-height: 341px;
 }
 .practice-advice__card {
-  border: 1px solid #004000;
   width: 230px;
   height: 341px;
 }
 .practice-advice__card-paragraph {
-  border: 1px solid #00ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 203px;
+
+}
+.practice-advice__support-container{
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+  height: 143px;
 }
 .practice-advice__card-title {
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: rgba(37, 43, 66, 1);
 }
 .practice-advice__card-text {
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
 }
 .practice-advice__card-img {
-  border: 1px solid #808040;
   width: 100%;
   height: 138px;
 }
@@ -431,10 +450,72 @@ body {
   width: 100%;
 }
 .who-we-are__container {
-  border: 1px solid #408080;
+  border: 1px solid #0000ff;
   max-width: 1046px;
   min-height: 890px;
   margin: 0 auto;
+}
+.who-we-are__basic-block {
+  min-height: 654px;
+  margin: 100px 0 136px 0;
+}
+.who-we-are__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 112px;
+  margin-bottom: 100px;
+}
+.who-we-are__title {
+  min-height: 57px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 135%;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
+}
+.who-we-are__text {
+  min-height: 40px;
+  max-width: 470px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
+}
+.who-we-are__media-block{
+  border: 1px solid #808080;
+  display: flex;
+  justify-content: space-between;
+}
+.who-we-are__video-window {
+  border: 1px solid #ff0000;
+  width: 597px;
+  height: 442px;
+}
+.who-we-are__content-block {
+  border: 1px solid #00ff00 ;
+  width: 333px;
+
+}
+.who-we-are__paragraph {
+}
+.who-we-are__paragraph-title {
+}
+.who-we-are__paragraph-text {
+}
+.who-we-are__item {
+}
+.who-we-are__item-img {
+}
+.who-we-are__item-paragraph {
+}
+.who-we-are__item-title {
+}
+.who-we-are__item-text {
 }
 /*-------- clients --------------------------------------------------------------*/
 .clients {
