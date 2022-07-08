@@ -558,10 +558,64 @@ color: #737373;
   }
 }
 /*-------- clients --------------------------------------------------------------*/
-.clients {
+.client {
+  position: relative;
   border: 1px solid #000040;
   width: 100%;
   min-height: 339px;
+}
+.client__icon-container {
+  min-height: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.client__subscribe-container {
+  border: 1px solid #800080;
+  min-height: 175px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+.client__subscribe-background{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px 50px;
+  background: #17213C;
+}
+.client__text-block {
+  max-width: 266px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: white;
+}
+.client__subscribe-block {
+  display: flex;
+  width: 450px;
+  height: 58px;
+  background: white;
+  border-radius: 5px 5px 5px 5px;
+}
+.client__input-field {
+  flex-grow: 2;
+}
+.client__input-button {
+  color: white;
+  background: #FF7B47;
+  border-radius: 0px 5px 5px 0px;
+}
+.client__background-block {
+  position: absolute;
+  bottom: 0;
+  z-index: -10;
+  width: 100%;
+  height: 77px;
+  background: #252B42;
 }
 /*-------- contacts --------------------------------------------------------------*/
 .contacts {
