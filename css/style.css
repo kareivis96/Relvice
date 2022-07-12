@@ -82,6 +82,8 @@ body {
 }
 /*-------- main-container --------------------------------------------------------------*/
 .main-container {
+  border: 1px solid white;
+  position: relative;
   width: 100%;
   min-height: 793px;
 }
@@ -521,8 +523,6 @@ body {
 .who-we-are__item-img {
   margin-right: 20px;
 }
-.who-we-are__item-paragraph {
-}
 .who-we-are__item-title {
   font-weight: 700;
   font-size: 16px;
@@ -662,9 +662,91 @@ body {
 }
 .contacts__container {
   border: 1px solid #ff0000;
-  max-width: 1046px;
+  box-sizing: border-box;
   min-height: 808px;
-  margin: 0 auto;
+  padding: 80px 0 110px ;
+}
+.contacts__text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 110px;
+}
+.contacts__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.contacts__tetx {
+  max-width: 470px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.contacts__card-block {
+  display: flex;
+  justify-content: center;
+}
+.contacts__card {
+  border: 1px solid #ff0000;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 328px;
+  height: 333px;
+  padding: 50px 40px;
+}
+.contacts__card-icon {
+  border: 1px solid #ff0000;
+  height: 72px;
+  width: 72px;
+}
+.contacts__card-email {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+.contacts__card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #252B42;
+}
+.contacts__card-button {
+  max-width: 160px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  color: rgba(255, 123, 71, 1);
+  border:  1px solid #FF7B47;
+  border-radius: 5px;
+}
+.contacts__card-icon_1 {
+}
+.contacts__card-icon_2 {
+}
+.contacts__card-icon_3 {
+}
+@media (max-width: 1023px) {
+  .contacts__card-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts__card {
+    margin-bottom: 10px;
+  }
 }
 /*-------- footer --------------------------------------------------------------*/
 .footer {
