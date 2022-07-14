@@ -606,11 +606,13 @@ body {
   flex-grow: 2;
 }
 .client__input-button {
+  box-sizing: border-box;
   width: 117px;
   color: white;
   background: #ff7b47;
   border-radius: 0px 5px 5px 0px;
   border: none;
+  transition: all .25s ease;
 }
 .client__background-block {
   position: absolute;
@@ -620,6 +622,13 @@ body {
   height: 77px;
   background: #252b42;
 }
+
+.client__input-button:hover {
+  background: white;
+  color: #ff7b47;
+  border:  2px solid #ff7b47;
+}
+
 @media (max-width: 1023px) {
   .client__icon-container {
     display: grid;
@@ -661,17 +670,16 @@ body {
   width: 100%;
 }
 .contacts__container {
-  border: 1px solid #ff0000;
   box-sizing: border-box;
   min-height: 808px;
-  padding: 80px 0 110px ;
+  padding: 80px 0;
 }
 .contacts__text-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 .contacts__title {
   margin-bottom: 10px;
@@ -692,9 +700,10 @@ body {
 .contacts__card-block {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 393px;
 }
 .contacts__card {
-  border: 1px solid #ff0000;
   background: white;
   display: flex;
   flex-direction: column;
@@ -705,9 +714,9 @@ body {
   width: 328px;
   height: 333px;
   padding: 50px 40px;
+  transition: all .25s ease;
 }
 .contacts__card-icon {
-  border: 1px solid #ff0000;
   height: 72px;
   width: 72px;
 }
@@ -733,12 +742,22 @@ body {
   border:  1px solid #FF7B47;
   border-radius: 5px;
 }
-.contacts__card-icon_1 {
+.contacts__card:hover {
+  height: 393px;
+  background: #252B42;
 }
-.contacts__card-icon_2 {
+.contacts__card:hover .contacts__card-button {
+  color: white;
+  background: #252B42;
+  border:  1px solid white;
 }
-.contacts__card-icon_3 {
+.contacts__card:hover .contacts__card-title {
+  color: white;
 }
+.contacts__card:hover .contacts__card-email {
+  color: white;
+}
+
 @media (max-width: 1023px) {
   .contacts__card-block {
     flex-direction: column;
