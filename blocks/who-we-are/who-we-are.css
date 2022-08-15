@@ -1,0 +1,110 @@
+.who-we-are {
+  width: 100%;
+}
+.who-we-are__container {
+  max-width: 1046px;
+  min-height: 890px;
+  margin: 0 auto;
+}
+.who-we-are__basic-block {
+  min-height: 654px;
+  margin: 100px 0 136px 0;
+}
+.who-we-are__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 112px;
+  margin-bottom: 100px;
+}
+.who-we-are__title {
+  min-height: 57px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 135%;
+  letter-spacing: 0.2px;
+  color: rgba(37, 43, 66, 1);
+}
+.who-we-are__text {
+  min-height: 40px;
+  max-width: 470px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: rgba(115, 115, 115, 1);
+}
+.who-we-are__media-block {
+  display: flex;
+  justify-content: space-between;
+}
+.who-we-are__video-window {
+  max-width: 597px;
+  max-height: 442px;
+}
+.who-we-are__video-window-img {
+  width: 100%;
+}
+.who-we-are__content-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 333px;
+}
+.who-we-are__paragraph-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.who-we-are__paragraph-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.who-we-are__item {
+  display: flex;
+}
+.who-we-are__item-img {
+  margin-right: 20px;
+}
+.who-we-are__item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.who-we-are__item-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+/* ------- */
+@media (max-width: 1023px) {
+  .who-we-are__media-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .who-we-are__content-block {
+    max-width: 100%;
+  }
+  .who-we-are__paragraph {
+    text-align: center;
+  }
+  .who-we-are__item {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .who-we-are__paragraph-text {
+    max-width: 500px;
+  }
+}

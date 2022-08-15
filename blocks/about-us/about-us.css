@@ -1,0 +1,82 @@
+.about-us {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+.about-us__container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1046px;
+  margin: 0 auto 0 auto;
+}
+.about-us-blocks {
+  background: #ffffff;
+  width: 328px;
+  min-height: 242px;
+  box-sizing: border-box;
+  padding: 35px 40px;
+  color: #252b42;
+  transition: all 0.25s ease;
+}
+.about-us-blocks__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 48px;
+  margin-bottom: 10px;
+}
+.about-us-blocks__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+}
+.about-us-blocks__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  color: #737373;
+}
+.about-us-blocks__img_case {
+  background-image: url('../../img/about-us/case-green.png');
+}
+.about-us-blocks__img_magazine {
+  background-image: url('../../img/about-us/magazine-green.png');
+  background-size: contain;
+}
+.about-us-blocks__img_book {
+  background-image: url('../../img/about-us/book-green.png');
+}
+/* ------- */
+.about-us-blocks:hover {
+  background-color: #0d5c63;
+  color: white;
+  transform: translateY(-50px);
+}
+.about-us-blocks:hover .about-us-blocks__text {
+  color: white;
+}
+.about-us-blocks_1:hover .about-us-blocks__img_case {
+  background-image: url('../../img/about-us/case-white.png');
+}
+.about-us-blocks_2:hover .about-us-blocks__img_magazine {
+  background-image: url('../../img/about-us/magazine-white.png');
+}
+.about-us-blocks_3:hover .about-us-blocks__img_book {
+  background-image: url('../../img/about-us/book-white.png');
+}
+/* ------- */
+@media (max-width: 1023px) {
+  .about-us__container {
+    flex-direction: column;
+    align-items: center;
+    min-height: 680px;
+    width: 95%;
+  }
+}
+@media (max-width: 335px) {
+  .about-us-blocks {
+    width: 300px;
+  }
+}

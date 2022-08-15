@@ -12,36 +12,23 @@
 /* main-container-block styles */
 @import url(../blocks/main-container/main-container.css);
 
+/* about-us-block styles */
+@import url(../blocks/about-us/about-us.css);
 
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
-@import url(../blocks/body/body.css);
+/* statistic-block styles */
+@import url(../blocks/statistic/statistic.css);
+
+/* practice-advise-block styles */
+@import url(../blocks/practice-advice/practice-advice.css);
+
+/* who-we-are-block styles */
+@import url(../blocks/who-we-are/who-we-are.css);
+
+/* client-block styles */
+@import url(../blocks/client/client.css);
+
+/* contacts-block styles */
+@import url(../blocks/contacts/contacts.css);
+
+/* footer-block styles */
+@import url(../blocks/footer/footer.css);

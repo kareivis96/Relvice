@@ -59,7 +59,7 @@
   line-height: 200%;
   letter-spacing: 0.2px;
   color: white;
-  transition: all .2s linear;
+  transition: all .1s linear;
 }
 .main-container__button:hover {
   background: none;
